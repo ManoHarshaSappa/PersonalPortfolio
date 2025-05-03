@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mano Harsha Sappa - Portfolio</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <!-- Fixed Footer Bar -->
+
+      
+
+  <main>
+
+    
+    
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-info">
+        <!-- Avatar block with status -->
+        <div class="avatar-box">
+          <img src="images/profile pic2.jpeg" alt="Your Avatar" class="avatar" loading="eager" />
+          <span class="online-dot"></span>
+        </div>
+
+        <!-- Name and title -->
+        <h2 class="name">Mano Harsha Sappa</h2>
+        <p class="role">Data Analytics Graduate Student</p>
+
+        <!-- Contact Info -->
+        <div class="contact-section">
+          <div class="contact-item">
+            <i class="fas fa-envelope icon gold"></i>
+            <div class="contact-label">
+              <small>EMAIL</small>
+              <p><a href="mailto:sappamanoharsha@gmail.com">sappamanoharsha@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-phone icon gold"></i>
+            <div class="contact-label">
+              <small>PHONE</small>
+              <p><a href="tel:+15716639406">+1 571-663-9406</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt icon gold"></i>
+            <div class="contact-label">
+              <small>LOCATION</small>
+              <p><a href="https://www.google.com/maps/search/?api=1&query=Fairfax,+VA" target="_blank">Fairfax, VA</a></p>
+            </div>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/contactmanoharshasappa/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/ManoHarshaSappa" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.youtube.com/@UsAlludu" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://www.instagram.com/harsha_smh/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="lets-talk-btn">
+            <a href="https://www.linkedin.com/in/contactmanoharshasappa/" target="_blank">Let’s Talk</a>
+          </div>
+          
+      </div>
+
+    </aside>
+
+
+
+
+
+
+ <!-- Main Content -->
+<div class="main-content">
+    <div class="content-box">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <a href="#about" class="nav-link active" onclick="switchSection(event, 'about')">About</a>
+        <a href="#projects" class="nav-link" onclick="switchSection(event, 'projects')">Projects</a>
+        <a href="#work" class="nav-link" onclick="switchSection(event, 'work')">Work Experience</a>
+        <a href="#certificates" class="nav-link" onclick="switchSection(event, 'certificates')">Certificates</a>
+        <a href="#contact" class="nav-link" onclick="switchSection(event, 'contact')">Contact Info</a>
+      </nav>
+
+      
+  
+      <!-- Combined About Section -->
+      <section id="about" class="section active-section">
+        <h2 class="section-title">About Me</h2>
+        <p>
+          Hi, I’m Mano Harsha Sappa! My journey into data science wasn’t something I had planned from the beginning, but rather something I discovered along the way. While pursuing my studies, I had the opportunity to intern at Corizo Edutech, where I was introduced to Python, SQL, and data visualization. Working with real-world datasets, analyzing patterns, and extracting insights made me realize how powerful data can be in solving problems and driving smarter decisions.
+        </p>
+  
+        <!-- Skills -->
+         <h3 class = "gap">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-scroll-header">
+          <span class="skill-count">27 Skills</span>
+          <span class="scroll-arrow" id="scrollArrow"><i class="fas fa-arrow-right"></i></span>
+        </div>
+        <div class="skills-scroll-wrapper">
+          <div class="skills-grid">
+            <!-- Keep all skill cards as is -->
+            <div class="skill-card"><i class="devicon-python-plain colored"></i><p>Python</p></div>
+            <div class="skill-card"><i class="devicon-mysql-plain colored"></i><p>MySQL</p></div>
+            <div class="skill-card"><i class="devicon-googlecloud-plain colored"></i><p>Google Cloud</p></div>
+            <div class="skill-card"><i class="devicon-amazonwebservices-original colored"></i><p>AWS</p></div>
+            <div class="skill-card"><i class="fas fa-chart-bar"></i><p>Tableau</p></div>
+            <div class="skill-card"><i class="fas fa-table"></i><p>Power BI</p></div>
+            <div class="skill-card"><i class="devicon-r-original colored"></i><p>R</p></div>
+            <div class="skill-card"><i class="devicon-git-plain colored"></i><p>Git</p></div>
+            <div class="skill-card"><i class="devicon-docker-plain colored"></i><p>Docker</p></div>
+            <div class="skill-card"><i class="devicon-linux-plain colored"></i><p>Linux</p></div>
+            <div class="skill-card"><i class="devicon-jupyter-plain colored"></i><p>Jupyter</p></div>
+            <div class="skill-card"><i class="devicon-postgresql-plain colored"></i><p>PostgreSQL</p></div>
+            <div class="skill-card"><i class="devicon-sqlite-plain colored"></i><p>SQLite</p></div>
+            <div class="skill-card"><i class="devicon-tensorflow-original colored"></i><p>TensorFlow</p></div>
+            <div class="skill-card"><i class="devicon-pytorch-original colored"></i><p>PyTorch</p></div>
+            <div class="skill-card"><i class="devicon-anaconda-original colored"></i><p>Anaconda</p></div>
+            <div class="skill-card"><i class="devicon-numpy-original colored"></i><p>NumPy</p></div>
+            <div class="skill-card"><i class="devicon-pandas-original colored"></i><p>Pandas</p></div>
+            <div class="skill-card"><i class="devicon-opencv-plain colored"></i><p>OpenCV</p></div>
+            <div class="skill-card"><i class="devicon-azure-plain colored"></i><p>Azure</p></div>
+            <div class="skill-card"><i class="devicon-vscode-plain colored"></i><p>VS Code</p></div>
+            <div class="skill-card"><i class="devicon-slack-plain colored"></i><p>Slack</p></div>
+            <div class="skill-card"><i class="devicon-jira-plain colored"></i><p>Jira</p></div>
+            <div class="skill-card"><i class="devicon-github-original colored"></i><p>GitHub</p></div>
+            <div class="skill-card"><i class="devicon-confluence-original colored"></i><p>Confluence</p></div>
+            <div class="skill-card"><i class="devicon-apache-plain colored"></i><p>Apache</p></div>
+          </div>
+        </div>
+         </h3>
+
+         <h3 class = "gap">
+        <!-- Education -->
+        <h2 class="section-title">Education</h2>
+        <div class="education-tabs">
+          <button class="edu-tab active" onclick="showEduTab('masters')">Master's</button>
+          <button class="edu-tab" onclick="showEduTab('btech')">B.Tech</button>
+          <button class="edu-tab" onclick="showEduTab('inter')">Intermediate</button>
+          <button class="edu-tab" onclick="showEduTab('school')">School</button>
+        </div>
+        <div class="education-content">
+          <div class="edu-panel active" id="masters">
+            <h3><strong>Institution:</strong></h3><p>George Mason University, Fairfax, VA, USA</p>
+            <h3><strong>Duration:</strong></h3><p>Jan 2024 – May 2026</p>
+            <h3><strong>Relevant Courses:</strong></h3><p>Machine Learning, Applied Statistics, Data Mining, Visualization for Analytics</p>
+          </div>
+          <div class="edu-panel" id="btech">
+            <h3><strong>Institution:</strong></h3><p>Jawaharlal Nehru Technological University, Kakinada, India</p>
+            <h3><strong>Duration:</strong></h3><p>Jun 2018 – Apr 2022</p>
+            <h3><strong>Relevant Courses:</strong></h3><p>Data Structures, Linear Algebra, Computer Programming, Probability Theory</p>
+          </div>
+          <div class="edu-panel" id="inter">
+            <h3><strong>Institution:</strong></h3><p>Sri Chaitanya Junior College, Eluru, India</p>
+            <h3><strong>Duration:</strong></h3><p>2016 – 2018</p>
+            <h3><strong>Relevant Courses:</strong></h3><p>Mathematics, Physics, Chemistry, Foundational Problem-Solving</p>
+          </div>
+          <div class="edu-panel" id="school">
+            <h3><strong>Institution:</strong></h3><p>Kendriya Vidyalaya, Eluru, India</p>
+            <h3><strong>Duration:</strong></h3><p>Jan 2015 – 2016</p>
+            <h3><strong>Learnings:</strong></h3><p>Basics of Python, Operating Systems, Computer Communication, Interpersonal Skills</p>
+          </div>
+        </div>
+        <h3>
+      </section>
+  
+      <!-- JS for scroll and tab -->
+      <script>
+        document.getElementById("scrollArrow").addEventListener("click", function () {
+          const scrollArea = document.querySelector(".skills-scroll-wrapper");
+          scrollArea.scrollBy({ left: 300, behavior: "smooth" });
+        });
+  
+        function showEduTab(tabId) {
+          document.querySelectorAll('.edu-panel').forEach(panel => panel.classList.remove('active'));
+          document.querySelectorAll('.edu-tab').forEach(tab => tab.classList.remove('active'));
+          document.getElementById(tabId).classList.add('active');
+          event.target.classList.add('active');
+        }
+  
+        function switchSection(event, sectionId) {
+          document.querySelectorAll('.section').forEach(s => s.classList.remove('active-section'));
+          document.getElementById(sectionId).classList.add('active-section');
+          document.querySelectorAll('.nav-link').forEach(n => n.classList.remove('active'));
+          event.target.classList.add('active');
+        }
+      </script>
+    
+    <section id="projects" class="section">
+        <div class="container">
+          <div class="title-wrapper">
+            <h1 class="sub-title">My Projects</h1>
+          </div>
+      
+          <div class="project-grid" id="projectGrid">
+            <!-- Project 1 -->
+            <div class="project-item">
+              <img src="images/1 Project.png" alt="Project 1">
+              <h2>DARIA-3o</h2>
+              <p>A powerful AI chatbot revolutionizing information access on InfoTunnel.</p>
+              <div class="link-container">
+                <a class="github-link" href="https://github.com/ManoHarshaSappa/Chatbot_for_Infotunnel" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+      
+            <!-- Project 2 -->
+            <div class="project-item">
+              <img src="images/2 Project.png" alt="Project 2">
+              <h2>Bridges at Risk</h2>
+              <p>Coastal vs. Inland Environmental Impacts on Lifespan and Maintenance.</p>
+              <div class="link-container">
+                <a class="github-link" href="https://github.com/ManoHarshaSappa/coastal_versus_inland_environmental_impacts_on_lifespan_and_maintenance" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+      
+            <!-- Project 3 -->
+            <div class="project-item">
+              <img src="images/3 Project.png" alt="Project 3">
+              <h2>Traffic Collision Analysis in Montgomery County</h2>
+              <p>Exploring trends, insights, and predictions to enhance road safety through data-driven analysis.</p>
+              <div class="link-container">
+                <a class="github-link" href="https://github.com/ManoHarshaSappa/Traffic-Collision-Analysis-in-Montgomery-County" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a class="website-link" href="https://manoharshasappa.github.io/Traffic-Collision-Analysis-in-Montgomery-County/fp.html" target="_blank">
+                  <i class="fa-solid fa-globe"></i> Visit Website
+                </a>
+              </div>
+            </div>
+      
+            <!-- Project 4 -->
+            <div class="project-item">
+              <img src="images/4 Project.png" alt="Project 4">
+              <h2>Redesigning Graphs for Enhanced Clarity and Insight</h2>
+              <p>Elevating misleading charts into powerful, intuitive visuals to reveal deeper insights and drive better decisions.</p>
+              <div class="link-container">
+                <a class="github-link" href="https://github.com/ManoHarshaSappa/Redesigning-Graphs-for-Enhanced-Clarity-and-Insight" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+                <a class="website-link" href="https://manoharshasappa.github.io/Redesigning-Graphs-for-Enhanced-Clarity-and-Insight/Bad-Graph.html" target="_blank">
+                  <i class="fa-solid fa-globe"></i> Visit Website
+                </a>
+              </div>
+            </div>
+      
+            <!-- Project 5 -->
+            <div class="project-item">
+              <img src="images/5 Project.png" alt="Project 5">
+              <h2>Smart Library Management System</h2>
+              <p>Revolutionizing library operations with an efficient system for managing resources, streamlining tasks, and enhancing user experience.</p>
+              <div class="link-container">
+                <a class="github-link" href="https://github.com/ManoHarshaSappa/Library_Management_System" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+      
+            <!-- Project 6 -->
+            <div class="project-item">
+              <img src="images/6 Project.png" alt="Optimized Recycling Management for NYC">
+              <h2>Optimized Recycling Management for NYC</h2>
+              <p>Analyzing NYC's recycling trends to enhance sustainability and improve waste management efficiency.</p>
+              <div class="link-container">
+                <a class="github-link" href="https://github.com/ManoHarshaSappa/Enhancing_Resource_Management" target="_blank">
+                  <i class="fab fa-github"></i> View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+  </section>
+
+
+
+
+
+
+
+  <section id="work" class="section">
+    <div class="timeline">
+      <div class="title-wrapper">
+
+        <h3 class="section-title">Work Experience</h3>
+      </div>
+  
+      <ol class="timeline-list">
+        <li class="timeline-item">
+          <div class="timeline-item-content">
+            <h4 class="job-title">Data Science and Analytics Intern</h4>
+            <p class="company-name">CORIZO Edutech Pvt. Ltd.</p>
+            <span class="duration">May 2022 – Dec 2022 • Remote</span>
+            <p class="location">Bengaluru, Karnataka, India</p>
+            <ul class="responsibilities">
+                <li>Built and deployed <strong>ML models (Random Forest, XGBoost)</strong> for customer segmentation, improving classification accuracy by <strong>18%</strong> and reducing overfitting by <strong>20%</strong> through robust EDA and feature engineering.</li>
+                <li>Automated business reporting using <strong>Power BI</strong> and <strong>Tableau dashboards</strong>, reducing manual effort by <strong>50%</strong> and enhancing data visibility for stakeholders.</li>
+                <li>Optimized complex <strong>SQL queries</strong> for real-time data retrieval, improving system performance by <strong>35%</strong>.</li>
+                <li>Applied time series forecasting with <strong>ARIMA</strong> and <strong>LSTM</strong>, along with A/B testing, to deliver insights that improved decision-making efficiency by <strong>40%</strong>.</li>
+                <li>Utilized <strong>Python</strong> (Pandas, NumPy, Seaborn) in <strong>Jupyter Notebook</strong> and <strong>VS Code</strong> to streamline analytics workflows and develop reusable scripts.</li>
+              </ul>
+            </ul>
+          </div>
+        </li>
+  
+        <li class="timeline-item">
+          <div class="timeline-item-content">
+            <h4 class="job-title">Data Engineering Intern – Web Application Development</h4>
+            <p class="company-name">MANAC Infotech Pvt. Ltd.</p>
+            <span class="duration">Feb 2022 – May 2022 • On-site</span>
+            <p class="location">Hyderabad, India</p>
+            <ul class="responsibilities">
+                <li>Designed and deployed automated <strong>ETL pipelines</strong> using <strong>Python (Flask)</strong> and <strong>SQL</strong>, streamlining real-time data ingestion and transformation workflows.</li>
+                <li>Developed interactive analytics dashboards with <strong>Flask + JavaScript</strong>, enabling dynamic visualizations from large-scale datasets.</li>
+                <li>Applied <strong>classification, clustering, and predictive modeling</strong> techniques to extract insights and improve application intelligence.</li>
+                <li>Integrated automation scripts for data wrangling and transformation, significantly reducing manual effort and increasing processing speed.</li>
+                <li>Contributed to <strong>end-to-end data systems development</strong>, combining front-end interactivity with backend processing and visualization tools.</li>
+            </ul>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <!-- Publications Section -->
+<h2 id="publications" class="section">
+    <div class="container">
+      <div class="title-wrapper">
+        <h2 class="section-title">Publications</h2>
+      </div>
+  
+      <div class="publication-box">
+        <h3 class="pub-title">Implementation and Analysis of Parallel Prefix Adders using FPGA</h3>
+        <p class="pub-conference">
+          Second International Conference on “Computational and Intelligent Techniques for Automation of Engineering Systems” (CITAES’22) · Jul 29, 2022
+        </p>
+  
+        <a class="pub-button" href="https://drive.google.com/file/d/1yuEAeICiuPdiBC8oDiXfRMk-WG7tFmco/view" target="_blank">
+          Show publication <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+  
+        <p class="pub-description">
+          This research paper presents an in-depth design and analysis of Parallel Prefix Adders (PPAs) implemented using FPGA,
+          focusing on various adder architectures such as Ladner Fischer, Kogge Stone, Spanning Tree, and Brent Kung Adders.
+          The study evaluates critical performance metrics, including power consumption, delay, and FPGA utilization, utilizing Xilinx ISE for comprehensive analysis.
+        </p>
+  
+        <p class="pub-honor">
+          Recognized for its significant contributions to FPGA-based computing and optimization, this project was honored with the Best Paper Award at the CITAES’22 conference.
+        </p>
+      </div>
+    </div>
+  
+</h2>
+  </section>
+  
+  
+
+
+
+
+
+
+  <section id="certificates" class="section">
+    <div class="container">
+      <div class="title-wrapper">
+        <h1 class="sub-title">Certifications</h1>
+      </div>
+  
+      <div class="certification-grid">
+
+        <a href="https://www.linkedin.com/in/contactmanoharshasappa/details/certifications/" target="_blank" class="cert-card">
+          <img src="Certificates/AES ACADEMY CLOUD.png" alt="AWS Cloud">
+          <h3>AWS Academy Cloud Foundations</h3>
+          <p>AWS · Mar 2024</p>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/contactmanoharshasappa/details/certifications/" target="_blank" class="cert-card">
+          <img src="Certificates/Tata Groups.png" alt="Tata Group">
+          <h3>Tata Group – Data Visualisation</h3>
+          <p>Forage · Mar 2025</p>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/contactmanoharshasappa/details/certifications/" target="_blank" class="cert-card">
+          <img src="Certificates/DevOps Foundation.png" alt="DevOps">
+          <h3>DevOps Foundations: Microservices</h3>
+          <p>CompTIA · Feb 2025</p>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/contactmanoharshasappa/details/certifications/" target="_blank" class="cert-card">
+          <img src="Certificates/Python Certificare.png" alt="Python Certificate">
+          <h3>Python (Basic)</h3>
+          <p>HackerRank · Apr 2025</p>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/contactmanoharshasappa/details/certifications/" target="_blank" class="cert-card">
+          <img src="Certificates/Generative Ai .png" alt="Generative AI">
+          <h3>Generative AI – A Way of Life</h3>
+          <p>Analytics Vidhya · Mar 2025</p>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/contactmanoharshasappa/details/certifications/" target="_blank" class="cert-card">
+          <img src="Certificates/Intro to Career Skills in data .png" alt="Career Skills Analytics">
+          <h3>Intro to Career Skills in Data Analytics</h3>
+          <p>LinkedIn Learning · Feb 2025</p>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/contactmanoharshasappa/details/certifications/" target="_blank" class="cert-card">
+          <img src="Certificates/Business analysis.png" alt="Business Analysis">
+          <h3>Business Analysis Foundations</h3>
+          <p>LinkedIn Learning · Feb 2025</p>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/contactmanoharshasappa/details/certifications/" target="_blank" class="cert-card">
+          <img src="Certificates/Excel VBA.png" alt="Excel VBA">
+          <h3>Excel VBA: Managing Files and Data</h3>
+          <p>LinkedIn Learning · Mar 2025</p>
+        </a>
+      
+      </div>
+      
+    </div>
+
+    <section class="award-flex-wrapper">
+        <div class="award-left">
+          <h2 class="pub-title">Best Paper Award – CITAES’22</h2>
+          <p class="pub-conference">
+            Issued by Seshadri Rao Gudlavalleru Engineering College · Jul 2022<br>
+            Associated with Jawaharlal Nehru Technological University, Kakinada
+          </p>
+      
+          <a href="https://www.linkedin.com/in/contactmanoharshasappa/details/publications/" target="_blank" class="pub-button">
+            Show publication <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+      
+          <p class="pub-description">
+            This certificate is awarded to <strong>Sappa Manoharsha</strong> for presenting a research paper titled
+            <em>"Implementation and Analysis of Parallel Prefix Adders using FPGA"</em> at the CITAES’22 conference.
+          </p>
+      
+          <p class="pub-description">
+            Recognized for its significant contributions to FPGA-based computing, the project received the <strong>Best Paper Award</strong>.
+          </p>
+        </div>
+      
+        <div class="award-right">
+          <img src="Certificates/BEST PAPER AWARD.png" alt="Best Paper Award" class="award-image">
+          <img src="Certificates/Best paper2.png" alt="Paper Summary" class="award-image">
+        </div>
+      </section>
+      
+    
+
+  </section>
+
+
+
+
+
+
+
+
+<!-- contact -->
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <div class="title-wrapper">
+        <h1 class="sub-title">Let’s Create Something <span class="highlight">Amazing</span></h1>
+        
+
+      </div>
+      <p class="contact-intro">Feel free to connect with me on any platform below:</p>
+  
+      <div class="contact-grid">
+        <a href="https://www.facebook.com/sappa.manu" target="_blank" class="contact-card facebook">
+          <i class="fab fa-facebook"></i>
+          <h3>Facebook</h3>
+          
+        </a>
+  
+        <a href="https://www.linkedin.com/in/contactmanoharshasappa/" target="_blank" class="contact-card linkedin">
+          <i class="fab fa-linkedin"></i>
+          <h3>LinkedIn</h3>
+          
+        </a>
+  
+        <a href="https://github.com/ManoHarshaSappa" target="_blank" class="contact-card github">
+          <i class="fab fa-github"></i>
+          <h3>GitHub</h3>
+         
+        </a>
+  
+        <a href="mailto:sappamanoharsha@gmail.com" class="contact-card email">
+          <i class="fas fa-envelope"></i>
+          <h3>Email</h3>
+          
+        </a>
+  
+        <a href="https://www.instagram.com/harsha_smh/" target="_blank" class="contact-card instagram">
+          <i class="fab fa-instagram"></i>
+          <h3>Instagram</h3>
+          
+        </a>
+  
+        <a href="https://www.youtube.com/@UsAlludu" target="_blank" class="contact-card youtube">
+          <i class="fab fa-youtube"></i>
+          <h3>YouTube</h3>
+          
+        </a>
+      </div>
+    </div>
+    <div class="container">
+
+        <!-- Contact Form -->
+        <form name="submit-to-google-sheet" class="contact-form">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+          <p>Drop your email & I’ll reach out to you!</p>
+        </form>
+      
+      </div>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzFOxT_49-WKwgQLDqJSDro6KLMmrOaTO7eSzQayJ9Xs5xtAKcFrB6F3btOoylsC8b12g/exec';
+        const form = document.forms['submit-to-google-sheet'];
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault();
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+              alert("Thank you! Your message has been sent.");
+              form.reset();
+            })
+            .catch(error => console.error('Error!', error.message));
+        });
+      </script>
+      
+</div>
+</div>
+</div>
+</main>
+
+
+
+<!-- Section Switch Script -->
+<script>
+    function switchSection(event, id) {
+      event.preventDefault();
+      // Hide all sections
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active-section'));
+      // Remove active from nav
+      document.querySelectorAll('.nav-link').forEach(n => n.classList.remove('active'));
+      // Show target section
+      document.getElementById(id).classList.add('active-section');
+      event.target.classList.add('active');
+    }
+    </script>
+
+<script>
+function switchSection(event, id) {
+    event.preventDefault();
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active-section'));
+    document.querySelectorAll('.nav-link').forEach(n => n.classList.remove('active'));
+    document.getElementById(id).classList.add('active-section');
+    event.target.classList.add('active');
+  }
+</script>
+
+
+</body>
+</html>
