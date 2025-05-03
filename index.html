@@ -296,56 +296,53 @@
 
 
 
-
-
-
-
   <section id="work" class="section">
-    <div class="timeline">
+    <div class="container">
+  
+      <!-- Work Experience -->
       <div class="title-wrapper">
-
-        <h3 class="section-title">Work Experience</h3>
+        <h2 class="section-title">Work Experience</h2>
       </div>
   
-      <ol class="timeline-list">
-        <li class="timeline-item">
-          <div class="timeline-item-content">
-            <h4 class="job-title">Data Science and Analytics Intern</h4>
-            <p class="company-name">CORIZO Edutech Pvt. Ltd.</p>
-            <span class="duration">May 2022 – Dec 2022 • Remote</span>
-            <p class="location">Bengaluru, Karnataka, India</p>
-            <ul class="responsibilities">
-                <li>Built and deployed <strong>ML models (Random Forest, XGBoost)</strong> for customer segmentation, improving classification accuracy by <strong>18%</strong> and reducing overfitting by <strong>20%</strong> through robust EDA and feature engineering.</li>
-                <li>Automated business reporting using <strong>Power BI</strong> and <strong>Tableau dashboards</strong>, reducing manual effort by <strong>50%</strong> and enhancing data visibility for stakeholders.</li>
+      <div class="timeline">
+        <ol class="timeline-list">
+          <li class="timeline-item">
+            <div class="timeline-item-content">
+              <h4 class="job-title">Data Science and Analytics Intern</h4>
+              <p class="company-name">CORIZO Edutech Pvt. Ltd.</p>
+              <span class="duration">May 2022 – Dec 2022 • Remote</span>
+              <p class="location">Bengaluru, Karnataka, India</p>
+              <ul class="responsibilities">
+                <li>Built and deployed <strong>ML models (Random Forest, XGBoost)</strong> for customer segmentation, improving classification accuracy by <strong>18%</strong> and reducing overfitting by <strong>20%</strong>.</li>
+                <li>Automated business reporting using <strong>Power BI</strong> and <strong>Tableau dashboards</strong>, reducing manual effort by <strong>50%</strong>.</li>
                 <li>Optimized complex <strong>SQL queries</strong> for real-time data retrieval, improving system performance by <strong>35%</strong>.</li>
-                <li>Applied time series forecasting with <strong>ARIMA</strong> and <strong>LSTM</strong>, along with A/B testing, to deliver insights that improved decision-making efficiency by <strong>40%</strong>.</li>
-                <li>Utilized <strong>Python</strong> (Pandas, NumPy, Seaborn) in <strong>Jupyter Notebook</strong> and <strong>VS Code</strong> to streamline analytics workflows and develop reusable scripts.</li>
+                <li>Applied time series forecasting with <strong>ARIMA</strong> and <strong>LSTM</strong>, delivering insights that improved decision-making efficiency by <strong>40%</strong>.</li>
+                <li>Utilized <strong>Python</strong> (Pandas, NumPy, Seaborn) in <strong>Jupyter Notebook</strong> and <strong>VS Code</strong> for reusable analytics workflows.</li>
               </ul>
-            </ul>
-          </div>
-        </li>
+            </div>
+          </li>
   
-        <li class="timeline-item">
-          <div class="timeline-item-content">
-            <h4 class="job-title">Data Engineering Intern – Web Application Development</h4>
-            <p class="company-name">MANAC Infotech Pvt. Ltd.</p>
-            <span class="duration">Feb 2022 – May 2022 • On-site</span>
-            <p class="location">Hyderabad, India</p>
-            <ul class="responsibilities">
-                <li>Designed and deployed automated <strong>ETL pipelines</strong> using <strong>Python (Flask)</strong> and <strong>SQL</strong>, streamlining real-time data ingestion and transformation workflows.</li>
-                <li>Developed interactive analytics dashboards with <strong>Flask + JavaScript</strong>, enabling dynamic visualizations from large-scale datasets.</li>
-                <li>Applied <strong>classification, clustering, and predictive modeling</strong> techniques to extract insights and improve application intelligence.</li>
-                <li>Integrated automation scripts for data wrangling and transformation, significantly reducing manual effort and increasing processing speed.</li>
-                <li>Contributed to <strong>end-to-end data systems development</strong>, combining front-end interactivity with backend processing and visualization tools.</li>
-            </ul>
-          </div>
-        </li>
-      </ol>
-    </div>
+          <li class="timeline-item">
+            <div class="timeline-item-content">
+              <h4 class="job-title">Data Engineering Intern – Web Application Development</h4>
+              <p class="company-name">MANAC Infotech Pvt. Ltd.</p>
+              <span class="duration">Feb 2022 – May 2022 • On-site</span>
+              <p class="location">Hyderabad, India</p>
+              <ul class="responsibilities">
+                <li>Designed and deployed automated <strong>ETL pipelines</strong> using <strong>Python (Flask)</strong> and <strong>SQL</strong>.</li>
+                <li>Developed interactive dashboards using <strong>Flask + JavaScript</strong>.</li>
+                <li>Applied <strong>classification, clustering, and predictive modeling</strong> for insight extraction.</li>
+                <li>Integrated automation scripts to reduce manual processing time.</li>
+                <li>Contributed to <strong>end-to-end data systems</strong> integrating front-end and backend logic.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+  
 
-    <!-- Publications Section -->
-<h2 id="publications" class="section">
-    <div class="container">
+  
+      <!-- Publications -->
       <div class="title-wrapper">
         <h2 class="section-title">Publications</h2>
       </div>
@@ -370,10 +367,10 @@
           Recognized for its significant contributions to FPGA-based computing and optimization, this project was honored with the Best Paper Award at the CITAES’22 conference.
         </p>
       </div>
-    </div>
   
-</h2>
+    </div>
   </section>
+  
   
   
 
@@ -469,8 +466,24 @@
           <img src="Certificates/Best paper2.png" alt="Paper Summary" class="award-image">
         </div>
       </section>
+      <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, {
+          threshold: 0.1,
+        });
       
-    
+        document.querySelectorAll('.scroll-fade').forEach(el => {
+          observer.observe(el);
+        });
+      });
+    </script>
 
   </section>
 
