@@ -700,8 +700,6 @@ main {
 }
 
 
-
-
 /* ==== Work Experience Timeline ==== */
 .timeline {
 }
@@ -734,14 +732,7 @@ main {
   color: #ffffff;
 }
 
-.company-name,
-.location,
-.duration,
-.responsibilities {
-  font-family: 'Inter', sans-serif;
-}
-
-/* Underline effect */
+/* Underline effect below section title */
 .section-title::after {
   content: '';
   display: block;
@@ -752,11 +743,16 @@ main {
   border-radius: 2px;
 }
 
+.company-name,
+.location,
+.duration,
+.responsibilities {
+  font-family: 'Inter', sans-serif;
+}
 
-/* Timeline Line */
+/* Timeline container */
 .timeline-list {
   list-style: none;
-
   position: relative;
 }
 
@@ -767,7 +763,7 @@ main {
   top: 0;
   width: 1px;
   height: 100%;
-  background-color:gray; /* dull yellow line */
+  background-color: gray;
 }
 
 /* Each timeline point */
@@ -784,7 +780,7 @@ main {
   top: 4px;
   width: 12px;
   height: 12px;
-  background-color: #6C3BAA;  /* yellow dot */
+  background-color: #6C3BAA;
   border: 2px solid #121212;
   border-radius: 50%;
   z-index: 1;
@@ -803,11 +799,11 @@ main {
 
 .company-name,
 .location {
-  color: #cccccc; /* lighter gray for contrast */
+  color: #cccccc;
 }
 
 .duration {
-  color: #6C3BAA; /* same yellow, more vivid on improved font */
+  color: #6C3BAA;
   font-weight: 600;
 }
 
@@ -818,25 +814,20 @@ main {
   margin-bottom: 10px;
 }
 
-
 .responsibilities {
-  color: #e0e0e0;  /* softer white for readability */
-  font-size: 15px; /* slightly upscaled for clarity */
+  color: #e0e0e0;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.7;
 }
+
 .responsibilities li {
   margin-bottom: 6px;
 }
 
 
 
-
-
-
-
-/* Publication */
-
+/* ==== Publications Section ==== */
 #publications.section {
   color: #f1f1f1;
 }
@@ -886,12 +877,8 @@ main {
   line-height: 1.6;
   color: #dddddd;
   margin-bottom: 12px;
-  font-weight: 40;  /* <-- Add this line */
+  font-weight: 400;
 }
-
-
-
-
 
 
 
