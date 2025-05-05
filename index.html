@@ -16,10 +16,21 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.toggle('active');
+    }
+  </script>
+  
 
    <!-- Fixed Footer Bar -->
 
-      
+      <!-- hamburger menu icon -->
+   <div class="mobile-toggle" onclick="toggleSidebar(this)">
+    <i class="fas fa-bars"></i> <!-- hamburger menu icon -->
+  </div>
+  
 
   <main>
 
@@ -35,8 +46,10 @@
         </div>
 
         <!-- Name and title -->
+        <div class="sidebar-content">
         <h2 class="name">Mano Harsha Sappa</h2>
         <p class="role">Data Analytics Graduate Student</p>
+        </div>
 
         <!-- Contact Info -->
         <div class="contact-section">
@@ -90,13 +103,24 @@
     <div class="content-box">
       <!-- Navbar -->
       <nav class="navbar">
-        <a href="#about" class="nav-link active" onclick="switchSection(event, 'about')">About</a>
-        <a href="#projects" class="nav-link" onclick="switchSection(event, 'projects')">Projects</a>
-        <a href="#work" class="nav-link" onclick="switchSection(event, 'work')">Work Experience</a>
-        <a href="#certificates" class="nav-link" onclick="switchSection(event, 'certificates')">Certificates</a>
-        <a href="#contact" class="nav-link" onclick="switchSection(event, 'contact')">Contact Info</a>
+        <a href="#about" class="nav-link active" onclick="switchSection(event, 'about'); showLabel(this, 'About');">
+          <i class="fas fa-home"></i>
+        </a>
+        <a href="#projects" class="nav-link" onclick="switchSection(event, 'projects'); showLabel(this, 'Projects');">
+          <i class="fas fa-folder"></i>
+        </a>
+        <a href="#work" class="nav-link" onclick="switchSection(event, 'work'); showLabel(this, 'Experience');">
+          <i class="fas fa-briefcase"></i>
+        </a>
+        <a href="#certificates" class="nav-link" onclick="switchSection(event, 'certificates'); showLabel(this, 'Certificates');">
+          <i class="fas fa-certificate"></i>
+        </a>
+        <a href="#contact" class="nav-link" onclick="switchSection(event, 'contact'); showLabel(this, 'Contact');">
+          <i class="fas fa-envelope"></i>
+        </a>
       </nav>
-
+      
+      
       
   
       <!-- Combined About Section -->
@@ -201,6 +225,9 @@
           event.target.classList.add('active');
         }
       </script>
+    
+
+
     
     <section id="projects" class="section">
         <div class="container">
@@ -600,6 +627,51 @@ function switchSection(event, id) {
     event.target.classList.add('active');
   }
 </script>
+
+<script>
+  function toggleSidebar(button) {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('active');
+
+    const icon = button.querySelector('i');
+    if (sidebar.classList.contains('active')) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times'); // "X" icon
+    } else {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars'); // Hamburger
+    }
+  }
+</script>
+
+<script>
+function showLabel(el, text) {
+  let label = document.createElement("div");
+  label.className = "tooltip-label show";
+  label.innerText = text;
+  el.appendChild(label);
+
+  setTimeout(() => {
+    label.classList.remove("show");
+    el.removeChild(label);
+  }, 2000);
+}
+</script>
+
+<script>
+  const navLinks = document.querySelectorAll(".nav-link");
+
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      // Remove active from all
+      navLinks.forEach(l => l.classList.remove("active"));
+      // Add to clicked one
+      link.classList.add("active");
+    });
+  });
+</script>
+
+
 
 
 </body>
